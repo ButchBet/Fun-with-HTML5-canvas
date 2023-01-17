@@ -73,3 +73,13 @@ canvas.addEventListener("mousemove", drawBoard);
 canvas.addEventListener("mouseup", () => isDrawing = false);
 
 canvas.addEventListener("mouseout", () => isDrawing = false);
+
+widnow.addEventListener("resize", () => { 
+    body.style.width = "10vw";
+
+    body.style.height = "10vh";
+    
+    canvas.width  = window.innerWidth - 10;
+
+    canvas.height = window.innerHeight - 10;
+})
